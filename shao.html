@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扫雷游戏</title>
+	<script src="js/shao.js"></script>
+</head>
+<style>
+	.sence{
+		width: 0;
+		height: 0;
+		background: #aaa;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.bian{
+		border: 3px solid #999;
+	}
+	.gezi{
+		width: 29px;
+		height: 29px;
+		margin-right: 1px;
+		margin-bottom: 1px;
+		background: #fff;
+		float: left;
+		line-height: 29px;
+		text-align: center;
+	}
+	.lei{
+		background: url(img/lei.png) no-repeat center center;
+		background-size: 100%;
+	}
+	.fugai{
+		background: #444;
+	}
+	.qizi{
+		background: url(img/qi.png) no-repeat center center;
+		background-size: 100%;
+	}
+	#jibie{
+		position: absolute;
+		left: 0;
+		top: -50px;
+		width: 75px;
+		height: 25px;
+		/* font-size: 16px; */
+	}
+	button{
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		left: 0;
+		right: 0;	
+		margin-right: auto;
+		margin-left: auto;
+		top: -50px;
+		cursor: pointer;
+		border: 0;
+	}
+	.kaishi{ 
+		background: url(img/zuo.png) no-repeat center center;
+		background-size: 100%;
+	}
+	.chenggong{
+		background: url(img/chen.png) no-repeat center center;
+		background-size: 100%;
+	}
+	.shibai{
+		background: url(img/shi.png) no-repeat center center;
+		background-size: 100%;
+	}
+	.qi{
+		position: absolute;
+		right: 0;
+		top: -50px;
+	}
+</style>
+<body>
+	<div class="sence">
+		<select name="" id="jibie">
+			<option>初级</option>
+			<option>中级</option>
+			<option>高级</option>
+			<option>自定义</option>
+		</select>
+		<button></button>
+		<div class="qi">
+			<span>旗子：</span>
+			<span>00</span>
+		</div>
+	</div>
+</body>
+</html>
